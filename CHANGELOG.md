@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.0.4
+- Re-trigger analysis on pub.dev.
+- README/docs polish.
+
 ## 0.0.3
 - Improve README (usage, API, troubleshooting).
 - Add example app with `IndexedStack` and `extendBody: true`.
