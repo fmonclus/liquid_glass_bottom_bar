@@ -1,8 +1,13 @@
-## 0.0.2
+# Changelog
 
-* Formatted code to meet `dart format` standards.
+## 0.0.3
+- Improve README (usage, API, troubleshooting).
+- Add example app with `IndexedStack` and `extendBody: true`.
+- Minor API/docs polish (clarify `activeColor`, `barBlurSigma`, `activeBlurSigma`).
+
+## 0.0.2
+- First public iteration of the glass pill and frosted bar.
+- Bug fixes and refinements from initial feedback.
 
 ## 0.0.1
-
-* Initial release of the liquid_glass_bottom_bar package.
-* Provides a customizable iOS-style bottom navigation bar with a glassmorphism effect.
+- Initial release.

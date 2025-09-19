@@ -1,6 +1,6 @@
 name: liquid_glass_bottom_bar
 description: A beautiful Flutter navigation bar with an iOS-inspired 'liquid glass' effect, featuring a frosted background and an animated pill for the active item.
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/fmonclus/liquid_glass_bottom_bar
 repository: https://github.com/fmonclus/liquid_glass_bottom_bar
 
