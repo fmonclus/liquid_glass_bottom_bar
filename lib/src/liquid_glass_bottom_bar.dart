@@ -180,9 +180,8 @@ class _ActivePillRow extends StatelessWidget {
       final slotWidth = c.maxWidth / items.length;
       final verticalPadding = showLabels ? 8.0 : 6.0;
       final pillHeight = barHeight - verticalPadding * 2;
-      final double contentWidth = showLabels
-          ? 24 + 6 + _textWidth(items[index].label, slotWidth)
-          : 24;
+      final double contentWidth =
+          showLabels ? 24 + 6 + _textWidth(items[index].label, slotWidth) : 24;
       final double horizontalPadding = showLabels ? 20.0 : 14.0;
       final double pillWidth =
           (contentWidth + horizontalPadding * 2).clamp(48.0, slotWidth - 12.0);

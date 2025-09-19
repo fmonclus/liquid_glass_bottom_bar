@@ -89,7 +89,8 @@ class _DemoScreenState extends State<DemoScreen> {
               fontSize: 22,
               fontWeight: FontWeight.w700,
               shadows: [
-                Shadow(blurRadius: 8, color: Colors.black54, offset: Offset(0, 2)),
+                Shadow(
+                    blurRadius: 8, color: Colors.black54, offset: Offset(0, 2)),
               ],
             ),
             child: IndexedStack(index: _currentIndex, children: pages),
@@ -159,7 +160,8 @@ class _DemoPage extends StatelessWidget {
           // === INICIO DEL NUEVO CONTROL ===
           Text(
             'DEMO CONTROL',
-            style: textTheme.labelSmall?.copyWith(color: Colors.white54, letterSpacing: 1),
+            style: textTheme.labelSmall
+                ?.copyWith(color: Colors.white54, letterSpacing: 1),
           ),
           const SizedBox(height: 8),
           OutlinedButton(
