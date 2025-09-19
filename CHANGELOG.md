@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.0.5
+- Sliding active pill (animated).
+- Fine-tuned glass look (stronger blur, minimal veil, no halo).
+- Docs/comments translated to en-US; README polish.
+
 ## 0.0.4
 - Re-trigger analysis on pub.dev.
 - README/docs polish.
