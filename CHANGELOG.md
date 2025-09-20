@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.0.6
+- Run `dart format` to satisfy pana and restore full Pub Points (no API changes).
+
 ## 0.0.5
 - Sliding active pill (animated).
 - Fine-tuned glass look (stronger blur, minimal veil, no halo).

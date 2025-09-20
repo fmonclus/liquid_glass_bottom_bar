@@ -128,7 +128,9 @@ class LiquidGlassBottomBar extends StatelessWidget {
                                 clipBehavior: Clip.none,
                                 children: [
                                   Icon(
-                                    selected ? (it.activeIcon ?? it.icon) : it.icon,
+                                    selected
+                                        ? (it.activeIcon ?? it.icon)
+                                        : it.icon,
                                     size: 22,
                                     color: iconColor,
                                   ),
@@ -148,8 +150,9 @@ class LiquidGlassBottomBar extends StatelessWidget {
                                   overflow: TextOverflow.ellipsis,
                                   style: TextStyle(
                                     fontSize: 11,
-                                    fontWeight:
-                                        selected ? FontWeight.w700 : FontWeight.w500,
+                                    fontWeight: selected
+                                        ? FontWeight.w700
+                                        : FontWeight.w500,
                                     color: textColor,
                                     letterSpacing: 0.1,
                                   ),
@@ -190,7 +193,9 @@ class _SlidingActivePill extends StatelessWidget {
 
   double _textWidth(String text, double maxWidth) {
     final tp = TextPainter(
-      text: TextSpan(text: text, style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w700)),
+      text: TextSpan(
+          text: text,
+          style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w700)),
       maxLines: 1,
       textDirection: TextDirection.ltr,
     )..layout(maxWidth: maxWidth);
@@ -206,7 +211,9 @@ class _SlidingActivePill extends StatelessWidget {
       final pillH = barHeight - vPad * 2;
 
       // Pill width based on the active tab content
-      final contentW = showLabels ? 24 + 6 + _textWidth(items[currentIndex].label, slotW) : 24;
+      final contentW = showLabels
+          ? 24 + 6 + _textWidth(items[currentIndex].label, slotW)
+          : 24;
       final padH = showLabels ? 20.0 : 14.0;
       final pillW = (contentW + padH * 2).clamp(48.0, slotW - 12.0);
 
@@ -230,7 +237,8 @@ class _SlidingActivePill extends StatelessWidget {
                   children: [
                     // Strong blur (glass)
                     BackdropFilter(
-                      filter: ImageFilter.blur(sigmaX: blurSigma, sigmaY: blurSigma),
+                      filter: ImageFilter.blur(
+                          sigmaX: blurSigma, sigmaY: blurSigma),
                       child: const SizedBox.expand(),
                     ),
                     // Minimal veil (almost pure blur)
@@ -275,12 +283,19 @@ class _Badge extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         border: Border.all(color: Colors.white.withAlpha(200), width: 1),
         boxShadow: [
-          BoxShadow(color: Colors.black.withAlpha(120), blurRadius: 8, offset: const Offset(0, 2)),
+          BoxShadow(
+              color: Colors.black.withAlpha(120),
+              blurRadius: 8,
+              offset: const Offset(0, 2)),
         ],
       ),
       child: Text(
         count > 99 ? '99+' : '$count',
-        style: const TextStyle(fontSize: 9, fontWeight: FontWeight.w700, color: Colors.white, height: 1),
+        style: const TextStyle(
+            fontSize: 9,
+            fontWeight: FontWeight.w700,
+            color: Colors.white,
+            height: 1),
       ),
     );
   }

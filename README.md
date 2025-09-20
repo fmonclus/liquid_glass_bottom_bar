@@ -26,7 +26,7 @@ Add the dependency in `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  liquid_glass_bottom_bar: ^0.0.5   # use the latest version
+  liquid_glass_bottom_bar: ^0.0.6   # use the latest version
 ```
 
 Then run:
